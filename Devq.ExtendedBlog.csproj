@@ -123,9 +123,7 @@
     <Compile Include="Settings\AuthorPartSettingsHooks.cs" />
     <Compile Include="ViewModels\WeightedTagViewModel.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Views\Parts\Author.Tags.cshtml" />
   </ItemGroup>

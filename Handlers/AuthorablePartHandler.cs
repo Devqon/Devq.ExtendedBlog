@@ -45,6 +45,7 @@ namespace Devq.ExtendedBlog.Handlers
                 .DisplayedContentTypes
                 .Split(new[] { Constants.ContentPickerFieldContentTypesSeparator, ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
+            // If no user, then the authenticated user has no use
             if (!contentTypeSettings.Contains("User"))
                 return;
 
