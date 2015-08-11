@@ -1,0 +1,10 @@
+﻿Name: Devq.ExtendedBlog
+AntiForgery: enabled
+Author: Devqon
+Website: http://orchardproject.net
+Version: 1.0
+OrchardVersion: 1.9
+Features:
+    Devq.ExtendedBlog:
+        Description: Show extended information about the author(s) of an item in their profile
+		Dependencies: Orchard.Projections, Contrib.Profile

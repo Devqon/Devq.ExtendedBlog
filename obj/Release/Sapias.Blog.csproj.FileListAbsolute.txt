@@ -1,0 +1,5 @@
+D:\Development\SapiasBlog\build\Compile\Sapias.Blog.dll.config
+D:\Development\SapiasBlog\build\Compile\Sapias.Blog.dll
+D:\Development\SapiasBlog\build\Compile\Sapias.Blog.pdb
+D:\Development\SapiasBlog\src\Orchard.Web\Modules\Sapias.Blog\obj\Release\Sapias.Blog.dll
+D:\Development\SapiasBlog\src\Orchard.Web\Modules\Sapias.Blog\obj\Release\Sapias.Blog.pdb

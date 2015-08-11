@@ -1,0 +1,14 @@
+﻿@model Devq.ExtendedBlog.Settings.AuthorPartSettings
+
+<fieldset>
+    <div>
+        @Html.LabelFor(m => m.MaxShownTags, T("Maximum number of tags shown with the author. Defaults to 10, 0 for all."))
+        @Html.EditorFor(m => m.MaxShownTags)
+    </div>
+</fieldset>           
+<fieldset>
+    <div>
+        @Html.LabelFor(m => m.ItemsDisplayType, T("Display type of the items"))
+        @Html.TextBoxFor(m => m.ItemsDisplayType)
+    </div>
+</fieldset>

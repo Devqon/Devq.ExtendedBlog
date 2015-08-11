@@ -1,0 +1,8 @@
+﻿@model Devq.ExtendedBlog.Settings.AuthorablePartSettings
+
+<fieldset>
+    <div>
+        @Html.CheckBoxFor(m => m.AutomaticallyAssignEditorToAuthors) <label for="@Html.FieldIdFor(m => m.AutomaticallyAssignEditorToAuthors)" class="forcheckbox">@T("Automatically assign user to authors")</label>
+        <span class="hint">@T("If checked, the current user will automatically be assigned as author.")</span>
+    </div>
+</fieldset>

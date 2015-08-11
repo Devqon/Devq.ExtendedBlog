@@ -1,0 +1,27 @@
+﻿@using Devq.ExtendedBlog.ViewModels
+@{
+    var viewModel = (IEnumerable<WeightedTagViewModel>) Model.Tags;
+
+    var grouped = viewModel.GroupBy(t => t.Weight, t => t.TagName);
+    var tagsHtml = new List<IHtmlString>();
+
+    foreach (var group in grouped)
+    {
+        var weight = group.Key;
+        foreach (var tag in group) {
+
+            if (tagsHtml.Any())
+            {
+                tagsHtml.Add(new HtmlString(" "));
+            }
+            
+            tagsHtml.Add(Html.ActionLink(tag, "Search", "Home", new {area = "Orchard.Tags", tagName = tag}, new {@class = string.Format("tag label label-success weight-{0}", weight)}));
+        }
+    }
+}
+
+@if (tagsHtml.Any()) {
+    foreach (var tagHtml in tagsHtml) {
+        @tagHtml
+    }
+}
